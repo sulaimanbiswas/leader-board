@@ -18,13 +18,7 @@ main {
     width: 870px;
 }
 
-/* Top Players Style */
-#top-section {
-    background-color: #ffffff;
-    padding: 30px;
-}
-
-#top-section h2 {
+.section-title {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -33,7 +27,13 @@ main {
     color: #562EFF;
 }
 
-#top-section .players {
+/* Top Players Style */
+#top-player {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+#top-player .players {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 40px;
@@ -42,17 +42,17 @@ main {
     border-bottom: 1px solid #D1D1D1;
 }
 
-#top-section .players .player {
+#top-player .players .player {
     display: flex;
     align-items: center;
 }
 
-#top-section .players .player img {
+#top-player .players .player img {
     width: 56px;
     height: 56px;
 }
 
-#top-section .players .player h3 {
+#top-player .players .player h3 {
     margin-left: 16px;
     font-family: 'Poppins';
     font-style: normal;
