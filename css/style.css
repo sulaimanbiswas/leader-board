@@ -1,0 +1,65 @@
+/* Common CSS and Utilities */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 870px;
+}
+
+/* Top Players Style */
+#top-section {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+#top-section h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #562EFF;
+}
+
+#top-section .players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    padding-bottom: 30px;
+    row-gap: 30px;
+    border-bottom: 1px solid #D1D1D1;
+}
+
+#top-section .players .player {
+    display: flex;
+    align-items: center;
+}
+
+#top-section .players .player img {
+    width: 56px;
+    height: 56px;
+}
+
+#top-section .players .player h3 {
+    margin-left: 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+/* Top Players Style */
