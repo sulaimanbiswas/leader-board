@@ -11,11 +11,15 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
     width: 870px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 5px;
 }
 
 .section-title {
@@ -27,11 +31,13 @@ main {
     color: #562EFF;
 }
 
-/* Top Players Style */
-#top-player {
-    background-color: #ffffff;
-    padding: 30px;
-}
+/* End Common CSS and Utilities */
+
+/* Top Section Styles*/
+/* #top-section {} */
+
+/* Top Players Styles */
+/* #top-player {} */
 
 #top-player .players {
     display: grid;
@@ -62,4 +68,193 @@ main {
     color: #000000;
 }
 
-/* Top Players Style */
+/* End Top Players Styles */
+/* Top Blog Styles */
+#top-blog {
+    margin-top: 30px;
+}
+
+#top-blog .blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+    grid-row-gap: 26px;
+    grid-column-gap: 40px;
+}
+
+#top-blog .blogs .blog {
+    display: flex;
+}
+
+/* #top-blog .blogs .blog .thumbnail {} */
+
+#top-blog .blogs .blog .thumbnail img {
+    width: 177px;
+    height: 117px;
+}
+
+#top-blog .blogs .blog .blog-info {
+    margin-left: 16px;
+}
+
+#top-blog .blogs .blog .blog-info .blog-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    color: #000000;
+}
+
+#top-blog .blogs .blog .blog-info .blog-author {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+    margin-top: 6px;
+}
+
+#top-blog .blogs .blog .blog-info .blog-author a {
+    text-decoration: none;
+    color: #562EFF;
+}
+
+/* End Top Blog Styles */
+/* End Top Section Styles*/
+
+/* Latest Course Styles */
+/* #latest-course {} */
+
+#latest-course .courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    margin-top: 11px;
+}
+
+#latest-course .courses .course {
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 15px;
+}
+
+#latest-course .courses .course .course-banner {
+
+    width: 224px;
+    height: 104px;
+}
+
+#latest-course .courses .course .course-banner img {
+    width: 100%;
+}
+
+#latest-course .courses .course .course-details {
+    margin-top: 20px;
+}
+
+#latest-course .courses .course .course-details .course-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.0336px;
+    line-height: 23px;
+    color: #1E1E1E;
+}
+
+#latest-course .courses .course .course-details .course-author {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6913px;
+    line-height: 17px;
+    color: #ED6B4F;
+    margin-top: 7px;
+}
+
+#latest-course .courses .course .course-details .course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+/* #latest-course .courses .course .course-details .course-info .course-rating {} */
+
+#latest-course .courses .course .course-details .course-info .course-rating .fa-star {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#latest-course .courses .course .course-details .course-info .course-rating .fa-star.filled {
+    color: #FFC014;
+}
+
+#latest-course .courses .course .course-details .course-info .course-rating .fa-star.empty {
+    color: #AEAEAE;
+    opacity: 0.25;
+}
+
+#latest-course .courses .course .course-details .course-info .course-rating span {
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.6913px;
+    line-height: 22px;
+    color: #A2A2A2;
+}
+
+#latest-course .courses .course .course-details .course-info .course-duration {
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#latest-course .courses .course .course-details .course-info .course-duration .fa-clock {
+    font-size: 20px;
+    color: #FF4A60;
+}
+
+#latest-course .courses .course .course-details .course-info .course-duration span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14.6913px;
+    line-height: 20px;
+    color: #FF4A60;
+    padding-left: 5px;
+}
+
+
+/* Responsive Styles */
+
+/* Mobile Device */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    #top-player .players,
+    #top-blog .blogs,
+    #latest-course .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #top-player .players .player,
+    #top-blog .blogs .blog,
+    #latest-course .courses .course {
+        flex-direction: column;
+    }
+}
+
+/* Tablet Device */
+@media only screen and (min-width:688px) and (max-width:992px) {}
